@@ -46,9 +46,9 @@ nav a{
 }
 .header{
     background-color: #FFF8F3 ;
-    background-image: url(images/header_bg.png);
+    background-image: url(images/header_bg.png) , url(images/developer.png);
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom right , top left;
 }
 .banner{
     padding: 50px 50px 0px 150px;
@@ -57,7 +57,7 @@ nav a{
     justify-content: space-between;
 }
 .banner-content{
-max-width: 500px;
+    max-width: 500px;
 }
 .banner .profile-picture{
     width: 600px;
@@ -183,5 +183,86 @@ textarea{
      background: #FFF;
      border: 0;
      width: 100%;
+}
+.hide{
+    display: none;
+}
+/* responsive Styles */
 
+
+/* mobile devices */
+@media screen and (max-width:576px) {
+    .skills-container,.resume-container,footer{
+        flex-direction: column;
+    }
+    #what-i-do-description{
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+    .skill-title{
+        text-align: center;
+        align-items: center;
+    }
+    .icono {
+        margin: 0px  183px;
+    }
+    .download-cv > .btn-primary{
+        border-radius: 5px;
+        background: #FD6E0A;
+        border: 0;
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 15px 35px;
+        width: 455px;
+    }
+    footer{
+        padding: 10px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    .contact input[type="text"] , .contact input[type="email"],
+textarea{
+    width: 80%;
+}
+.social-links{
+    margin-left: 150px;
+}
+.about{
+    padding: 10px;
+
+}
+.about-info-container{
+    flex-direction: column;
+}
+.banner{
+    flex-direction: column;
+    padding: 15px;
+}
+.btn-primary{
+    margin-bottom: 15px;
+}
+
+.header{
+    background-image: none;
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    flex-direction: column;
+}
+.banner .profile-picture{
+    width: 100%;
+}
+nav > ul{
+    /* flex-direction: column; */
+    
+}
+nav > h3{
+    
+}
+}
+@media screen and (min-width:576px) and(max-width:960px) {
+    
 }
